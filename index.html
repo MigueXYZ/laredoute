@@ -155,15 +155,119 @@
                     </div>
                 </div>
             </div>
-            <!-- footer -->
-            <div class="no-padding no-margin max-width-100 container w-100 footer footer-color-1 white-font">
-                <div class="row">
-                  <div class="col-sm align-c padding-left-rem-4">
-                    <i class="bi bi-truck size70"></i><span class="p-2">ENVIO GRÁTIS</span> 
-                  </div>
-                  <div class="col-sm align-c">
-                    <i class="bi bi-box-seam size70"></i><span class="p-2">TROCAS E DEVOLUÇÕES</span>
-                  </div>
+
+            <!-- Modal Content -->
+        <div id="reinsurancePanel_0" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+            <!-- Modal Content Existing Code -->
+            <div class="modal_titleBar modal_titleBar--hasShadow">
+                <div class="modal_close_container">
+                    <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="ignore">
+                <div class="ignore">
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+                </div>
+            </div>
+            <link href="https://uat01.laredoute.fr/css/1/fr-FR/mastercss?v=YfZZxmYZBytxw_0OJEJ0yBmBZ11S5w5XIo7OBu396MI1" rel="stylesheet">
+            <link href="https://uat01.laredoute.fr/css/1/fr-FR/indexcss?v=38qngzst1rLc3X3tmiv3SEbigo9uXIymwc6lhEnTM_Q1" rel="stylesheet">
+            <link href="https://cdn.laredoute.com/marketing/StudioFR/Structure/hp/new-identity/hp-new-identity-inter-local.css" rel="stylesheet" type="text/css">
+            <link href="https://cdn.laredoute.com/marketing/StudioFR/Services/MAJPDP-250722/pdpservices.css" rel="stylesheet" type="text/css">
+            <style>
+            
+            /* Modal Content */
+            .modal_content {
+                padding: 20px;
+            }
+
+            /* Modal Title Bar */
+            .modal_titleBar {
+                background-color: #f1f1f1;
+                padding: 10px;
+            }
+
+            /* Close Button */
+            .modal_close_container {
+                text-align: right;
+            }
+
+            .modal_close {
+                cursor: pointer;
+                background: none;
+                border: none;
+                font-size: 20px;
+                color: #333;
+            }
+
+            /* Other Modal Styles */
+            .payment-name {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .payment {
+                display: flex;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+
+            @media only screen and (max-width: 992px) {
+                .mobile {
+                    display: block;
+                }
+
+                .desktop {
+                    display: none;
+                }
+            }
+
+
+            </style>
+            <div class="ctn" style="max-height: 100%; overflow-y: auto;">
+                <div class="titre-service"><img src="https://cdn.laredoute.com/marketing/StudioFR/LR-pictos/NI/Delivery.svg" style="border-right: 0;" alt="Entrega">
+                <div class="payment-name">&nbsp;&nbsp;Entrega ao domicílio</div>
+                </div>
+                <p>A entrega ao domicílio é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior a 50€&nbsp;o custo será de 4,99€ (7,99€ para clientes das ilhas).</p>
+                <br><br>
+                <div class="payment">
+                <p><img src="https://www.newsredoute.com/servicos/pe22/images/entrega-plus.jpg" alt="" style="width: 55px;"></p>
+                <div class="payment-name" style="padding-left: 15px; padding-top: 5px;">Entrega Plus <span style="font-size: 14px;"> <br>ao domicílio <br><br></span></div>
+                </div>
+                <p>*Devido às suas características de peso (&gt;1,5 metros incluídos ou 0,125 m3 de volume), medida e/ou volume, a entrega ao domicílio Plus é a única forma de entrega disponível para alguns artigos da categoria mobiliário e decoração, que tem um custo de envio associado, descrito na tabela abaixo. Pagará, este valor, apenas uma vez por encomenda. <br><br><img class="desktop" src="https://newsredoute.com/servicos/ah22/images/tabela_desktop_40.jpg" alt=""> <br><br>O envio ao domicílio (Entrega ao domicílio normal, Entrega Exclusiva ao domicílio e Entrega Plus ao domicílio) para as ilhas segue por via marítima.<br><br><br>O artigo será entregue à entrada da sua casa.<br><strong>Atenção!</strong> Verifique se as aberturas (portas, escadas, elevadores) permitem a passagem da embalagem no ato da entrega. No caso de impossibilidade de entrega devido aos fatores indicados a mesma passará a ser realizada sob a inteira responsabilidade dos utilizadores, não podendo a La Redoute ser responsabilizada pela mesma.<br><br><img class="mobile" src="https://newsredoute.com/servicos/ah22/images/tabela_mobile_40.jpg" alt=""> <br><br></p>
+                <div class="payment">
+                <p><img src="https://www.newsredoute.com/servicos/pe18/images/pickup2.png" alt="" style="width: 80px; left: -12px; position: relative;"></p>
+                <div class="payment-name">Pontos PICKUP <span style="font-size: 14px;"> <br>Horário prático <br>+600 pontos à sua disposição <br><br></span></div>
+                </div>
+                <p>Os pontos Pickup consistem numa vasta rede de lojas onde poderá levantar as suas encomendas. A entrega nos Pontos Pickup é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior o custo será de 4,99€ (7,99€ nas ilhas). Receberá um aviso por SMS ou e-mail a avisar logo que a sua encomenda se encontre disponível para levantamento no Ponto de Entrega. Proceda o levantamento, no prazo máximo de 8 dias, fazendo-se acompanhar do Bilhete de Identidade ou Cartão de Cidadão.</p>
+                <p><strong>Pontos Pickup:</strong> <br><a class="block big underline" href="https://www.laredoute.pt/myaccount/returnpoints.aspx" target="_blank" rel="noopener"> Saiba aqui quais os Pontos mais perto de si</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="no-padding no-margin max-width-100 container w-100 footer footer-color-1 white-font">
+        <div class="row">
+            <div class="col-sm align-c padding-left-rem-4">
+                <i class="bi bi-truck size70"></i>
+                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal()">
+                        <span class="p-2">ENVIO GRÁTIS</span>
+                    </a>
+            </div>
+            <div class="col-sm align-c">
+                <i class="bi bi-box-seam size70"></i><span class="p-2">TROCAS E DEVOLUÇÕES</span>
+            </div>
                   <div class="col-sm align-c">
                     <i class="bi bi-shield size70"></i><span class="p-2">PAGAMENTO SEGURO</span>
                   </div>
