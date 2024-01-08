@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-    background-color: #696969 !important;
+    background-color: #ffffff !important;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
 }
@@ -48,13 +48,40 @@ body {
 }
 
 .cinza{
-    background-color: #696969 !important;
+    background-color: #ffffff !important;
 }
 
+.bold-text{
+    font-weight: bold !important;
+}
+
+.scroller{
+    display: flex;
+    overflow-x: auto;
+}
+
+.padding-small{
+    padding: .25rem !important;
+}
+
+.margin-medium{
+    margin: 1rem !important;
+}
 
 .no-round-right{
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+}
+
+.card-img{
+    width:290px;
+    height:290px;
+}
+
+.card{
+    min-width: 300px !important;
+    background-color: #F3F3F3 !important;
+    border: none !important;;
 }
 
 .logo{
