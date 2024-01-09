@@ -6,13 +6,29 @@ body {
     font-size: 16px;
 }
 
+.font-fam{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.font-16{
+    font-size: 16px !important;
+}
+
 .font-24{
     font-size: 24px;
 }
 .font-32{
     font-size: 32px;
 }
-
+.font-36{
+    font-size: 36px;
+}
+.font-100{
+    font-size: 100px;
+}
+.font-strong{
+    font-weight: bold;
+}
 .big-image{
     margin: 2rem;
     border-radius: 1rem;
@@ -65,6 +81,10 @@ body {
 
 .big{
     height: 10rem !important;
+}
+
+.small{
+    height: 2.5rem !important;
 }
 
 .cinza{
@@ -221,3 +241,58 @@ body {
     color: white;
     text-decoration: none;
 }
+
+
+            /* Modal Content */
+            .modal_content {
+                padding: 20px;
+            }
+
+            /* Modal Title Bar */
+            .modal_titleBar {
+                background-color: #f1f1f1;
+                padding: 10px;
+            }
+
+            /* Close Button */
+            .modal_close_container {
+                text-align: right;
+            }
+
+            .modal_close {
+                cursor: pointer;
+                background: none;
+                border: none;
+                font-size: 20px;
+                color: #333;
+            }
+
+            /* Other Modal Styles */
+            .payment-name {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .payment {
+                display: flex;
+                align-items: center;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            .desktop {
+                display: block;
+            }
+
+            @media only screen and (max-width: 992px) {
+                .mobile {
+                    display: block;
+                }
+
+                .desktop {
+                    display: none;
+                }
+            }

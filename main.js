@@ -25,17 +25,18 @@ setTimeout(() => {
 }, 3000);
 
 // Function to open the modal
-function openModal() {
-    var modal = document.getElementById('reinsurancePanel_0');
+function openModal(id) {
+    var modal = document.getElementById('reinsurancePanel_'+id);
     modal.classList.add('modal--isOpen');
     modal.setAttribute('aria-modal', 'true');
     modal.setAttribute('tabindex', '0');
     modal.classList.add('show');
 }
 
+
 // Function to close the modal
-function closeModal() {
-    var modal = document.getElementById("reinsurancePanel_0");
+function closeModal(id) {
+    var modal = document.getElementById('reinsurancePanel_'+id);
     modal.classList.remove('modal--isOpen');
     modal.setAttribute('aria-modal', 'false');
     modal.setAttribute('tabindex', '-1');

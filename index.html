@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://uat01.laredoute.fr/css/1/fr-FR/mastercss?v=YfZZxmYZBytxw_0OJEJ0yBmBZ11S5w5XIo7OBu396MI1" rel="stylesheet">
+    <link href="https://uat01.laredoute.fr/css/1/fr-FR/indexcss?v=38qngzst1rLc3X3tmiv3SEbigo9uXIymwc6lhEnTM_Q1" rel="stylesheet">
+    <link href="https://cdn.laredoute.com/marketing/StudioFR/Structure/hp/new-identity/hp-new-identity-inter-local.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.laredoute.com/marketing/StudioFR/Services/MAJPDP-250722/pdpservices.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -157,11 +161,12 @@
             </div>
 
             <!-- Modal Content -->
-        <div id="reinsurancePanel_0" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+            <!-- modal pagamento seguro-->
+        <div id="reinsurancePanel_2" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
             <!-- Modal Content Existing Code -->
             <div class="modal_titleBar modal_titleBar--hasShadow">
                 <div class="modal_close_container">
-                    <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
+                    <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal(2)">
                         <i class="bi bi-x-lg"></i>
                     </button>
                     
@@ -174,105 +179,275 @@
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
                 </div>
             </div>
-            <link href="https://uat01.laredoute.fr/css/1/fr-FR/mastercss?v=YfZZxmYZBytxw_0OJEJ0yBmBZ11S5w5XIo7OBu396MI1" rel="stylesheet">
-            <link href="https://uat01.laredoute.fr/css/1/fr-FR/indexcss?v=38qngzst1rLc3X3tmiv3SEbigo9uXIymwc6lhEnTM_Q1" rel="stylesheet">
-            <link href="https://cdn.laredoute.com/marketing/StudioFR/Structure/hp/new-identity/hp-new-identity-inter-local.css" rel="stylesheet" type="text/css">
-            <link href="https://cdn.laredoute.com/marketing/StudioFR/Services/MAJPDP-250722/pdpservices.css" rel="stylesheet" type="text/css">
-            <style>
-            
-            /* Modal Content */
-            .modal_content {
-                padding: 20px;
-            }
 
-            /* Modal Title Bar */
-            .modal_titleBar {
-                background-color: #f1f1f1;
-                padding: 10px;
-            }
-
-            /* Close Button */
-            .modal_close_container {
-                text-align: right;
-            }
-
-            .modal_close {
-                cursor: pointer;
-                background: none;
-                border: none;
-                font-size: 20px;
-                color: #333;
-            }
-
-            /* Other Modal Styles */
-            .payment-name {
-                font-size: 20px;
-                font-weight: 500;
-            }
-
-            .payment {
-                display: flex;
-                align-items: center;
-                font-family: 'Poppins', sans-serif;
-            }
-
-            .mobile {
-                display: none;
-            }
-
-            .desktop {
-                display: block;
-            }
-
-            @media only screen and (max-width: 992px) {
-                .mobile {
-                    display: block;
-                }
-
-                .desktop {
-                    display: none;
-                }
-            }
-
-
-            </style>
             <div class="ctn" style="max-height: 100%; overflow-y: auto;">
-                <div class="titre-service"><img src="https://cdn.laredoute.com/marketing/StudioFR/LR-pictos/NI/Delivery.svg" style="border-right: 0;" alt="Entrega">
-                <div class="payment-name">&nbsp;&nbsp;Entrega ao domicílio</div>
+            <div class="titre-service"><i class="bi bi-shield font-100"></i>
+                <div class="font-24 font-strong">&nbsp;&nbsp;Pagamento Seguro</div>
                 </div>
-                <p>A entrega ao domicílio é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior a 50€&nbsp;o custo será de 4,99€ (7,99€ para clientes das ilhas).</p>
-                <br><br>
                 <div class="payment">
-                <p><img src="https://www.newsredoute.com/servicos/pe22/images/entrega-plus.jpg" alt="" style="width: 55px;"></p>
-                <div class="payment-name" style="padding-left: 15px; padding-top: 5px;">Entrega Plus <span style="font-size: 14px;"> <br>ao domicílio <br><br></span></div>
+                    <p><img src="https://www.newsredoute.com/servicos/pe18/images/mbway_v2.png" alt="" style="width: 80px;"></p>
+                    <div class="font-16 font-fam font-strong">MB Way</div>
                 </div>
-                <p>*Devido às suas características de peso (&gt;1,5 metros incluídos ou 0,125 m3 de volume), medida e/ou volume, a entrega ao domicílio Plus é a única forma de entrega disponível para alguns artigos da categoria mobiliário e decoração, que tem um custo de envio associado, descrito na tabela abaixo. Pagará, este valor, apenas uma vez por encomenda. <br><br><img class="desktop" src="https://newsredoute.com/servicos/ah22/images/tabela_desktop_40.jpg" alt=""> <br><br>O envio ao domicílio (Entrega ao domicílio normal, Entrega Exclusiva ao domicílio e Entrega Plus ao domicílio) para as ilhas segue por via marítima.<br><br><br>O artigo será entregue à entrada da sua casa.<br><strong>Atenção!</strong> Verifique se as aberturas (portas, escadas, elevadores) permitem a passagem da embalagem no ato da entrega. No caso de impossibilidade de entrega devido aos fatores indicados a mesma passará a ser realizada sob a inteira responsabilidade dos utilizadores, não podendo a La Redoute ser responsabilizada pela mesma.<br><br><img class="mobile" src="https://newsredoute.com/servicos/ah22/images/tabela_mobile_40.jpg" alt=""> <br><br></p>
+                <p class="font-fam font-16">Com o MB WAY pode efetuar o pagamento da sua encomenda de forma rápida e cómoda através do seu smartphone, bastando para isso ter uma conta MB WAY. As encomendas MB WAY só serão tratadas após confirmação do pagamento. Para mais informações ou para saber como criar uma conta, consulte esta página: <u><a href="https://www.mbway.pt" target="_blank" style="color:black;">https://www.mbway.pt.</a></u></p>
                 <div class="payment">
-                <p><img src="https://www.newsredoute.com/servicos/pe18/images/pickup2.png" alt="" style="width: 80px; left: -12px; position: relative;"></p>
-                <div class="payment-name">Pontos PICKUP <span style="font-size: 14px;"> <br>Horário prático <br>+600 pontos à sua disposição <br><br></span></div>
+                    <p><img src="https://www.newsredoute.com/servicos/pe18/images/visa_v2.png" alt="" style="width: 80px;"> <img src="https://www.newsredoute.com/servicos/pe18/images/mastercard_v2.png" alt="" style="width: 80px;"></p>
+                    <div class="font-16 font-fam font-strong">VISA / Mastercard</div>
                 </div>
-                <p>Os pontos Pickup consistem numa vasta rede de lojas onde poderá levantar as suas encomendas. A entrega nos Pontos Pickup é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior o custo será de 4,99€ (7,99€ nas ilhas). Receberá um aviso por SMS ou e-mail a avisar logo que a sua encomenda se encontre disponível para levantamento no Ponto de Entrega. Proceda o levantamento, no prazo máximo de 8 dias, fazendo-se acompanhar do Bilhete de Identidade ou Cartão de Cidadão.</p>
-                <p><strong>Pontos Pickup:</strong> <br><a class="block big underline" href="https://www.laredoute.pt/myaccount/returnpoints.aspx" target="_blank" rel="noopener"> Saiba aqui quais os Pontos mais perto de si</a></p>
+                <p class="font-16 font-fam">Os dados da encomenda e do seu cartão serão enviados, devidamente encriptados, para a entidade bancária na data da sua encomenda.</p>
+                <p class="font-16 font-fam">Após validação e comunicação do seu banco, a encomenda será processada. Em caso de recusa, a sua encomenda será cancelada.</p>
+                <div class="payment">
+                    <p><img src="https://www.newsredoute.com/servicos/pe18/images/paypal_v2.png" alt="" style="width: 80px; left: -5px; position: relative;"></p>
+                    <div class="font-16 font-fam font-strong">PayPal</div>
+                </div>
+                <p class="font-16 font-fam">
+                    <strong>Instruções:</strong><br>
+                    <span class="sep"><strong>1.</strong></span>Faça a sua encomenda e escolha o modo de pagamento PayPal. <br>
+                    <span class="sep"><strong>2.</strong></span>Será reencaminhado(a) para uma página de segurança do PayPal, onde terá que se identificar na sua conta PayPal para poder finalizar a sua encomenda. <br><br>
+                    A morada utilizada para a entrega da sua encomenda será a que definiu no site da La Redoute.
+                </p>
+                <div class="payment">
+                    <p><img src="https://www.newsredoute.com/servicos/pe18/images/multibanco_v2.png" alt="" style="width: 80px; left: -12px; position: relative;"></p>
+                    <div class="font-16 font-fam font-strong">Multibanco</div>
+                </div>
+                <p class="font-16 font-fam">Utilize este modo de pagamento por internet, telefone e correio.<br><strong>Importante:</strong> &nbsp;este modo de pagamento só está disponível para encomendas de valor igual ou inferior a 150€</p>
+                <div class="small"></div>
+                <div class="payment">
+                    <p><!--?xml version="1.0" encoding="utf-8"?--> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="auto" viewBox="0 0 40 29" style="enable-background: new 0 0 40 29;" xml:space="preserve">
+                    <style type="text/css">
+                              .st0 {
+                                fill: #FFFFFF;
+                              }
+                    
+                              .st1 {
+                                fill: #3C4043;
+                              }
+                    
+                              .st2 {
+                                fill: #4285F4;
+                              }
+                    
+                              .st3 {
+                                fill: #34A853;
+                              }
+                    
+                              .st4 {
+                                fill: #FABB05;
+                              }
+                    
+                              .st5 {
+                                fill: #E94235;
+                              }
+                            </style>
+                    <path class="st0" d="M35.1,0H4.6C2.1,0,0,2.1,0,4.6v18.9c0,2.6,2.1,4.6,4.6,4.6h30.5c2.5,0,4.6-2.1,4.6-4.6V4.6
+                        C39.7,2.1,37.7,0,35.1,0z"></path> <path class="st1" d="M18.8,14.5v4.2h-1.3V8.3H21c0.9,0,1.7,0.3,2.3,0.9c0.6,0.6,1,1.3,1,2.2c0,0.9-0.3,1.6-1,2.2
+                        c-0.6,0.6-1.4,0.9-2.3,0.9L18.8,14.5L18.8,14.5L18.8,14.5z M18.8,9.5v3.6H21c0.5,0,1-0.2,1.3-0.5c0.4-0.4,0.5-0.8,0.5-1.3
+                        c0-0.5-0.2-0.9-0.5-1.3C22,9.7,21.6,9.6,21,9.6L18.8,9.5C18.8,9.6,18.8,9.5,18.8,9.5z M27.7,11.3c1,0,1.8,0.3,2.3,0.8
+                        s0.9,1.3,0.9,2.2v4.4h-1.3v-1h-0.1c-0.5,0.8-1.3,1.2-2.2,1.2c-0.8,0-1.4-0.2-2-0.7c-0.5-0.5-0.8-1-0.8-1.7c0-0.7,0.3-1.3,0.8-1.8
+                        c0.6-0.4,1.3-0.7,2.2-0.7c0.8,0,1.4,0.1,2,0.4v-0.3c0-0.5-0.2-0.9-0.5-1.2c-0.4-0.3-0.8-0.5-1.3-0.5c-0.7,0-1.3,0.3-1.8,0.9
+                        l-1.2-0.7C25.5,11.8,26.5,11.3,27.7,11.3L27.7,11.3z M26,16.5c0,0.3,0.1,0.6,0.4,0.9c0.3,0.2,0.6,0.3,1,0.3c0.6,0,1.1-0.2,1.5-0.6
+                        c0.4-0.4,0.7-0.9,0.7-1.5c-0.4-0.3-1-0.5-1.7-0.5c-0.5,0-1,0.1-1.4,0.4C26.2,15.8,26,16.1,26,16.5z M38.2,11.5l-4.4,10.3h-1.4
+                        l1.7-3.6l-2.9-6.7h1.5l2.1,5.1h0l2.1-5.1H38.2z"></path> <path class="st2" d="M13.5,13.6c0-0.4,0-0.9-0.1-1.3H7.8v2.3l3.2,0c-0.1,0.8-0.6,1.4-1.2,1.9V18h1.9C12.8,17,13.5,15.4,13.5,13.6
+                        L13.5,13.6z"></path> <path class="st3" d="M9.8,16.5c-0.5,0.4-1.2,0.6-2,0.6c-1.6,0-2.9-1-3.3-2.5h-2v1.5c1,1.9,3,3.3,5.3,3.3c1.6,0,3-0.5,3.9-1.4
+                        L9.8,16.5L9.8,16.5z"></path> <path class="st4" d="M4.3,13.5c0-0.4,0.1-0.8,0.2-1.1v-1.5h-2c-0.4,0.8-0.6,1.7-0.6,2.7c0,1,0.2,1.9,0.6,2.7l2-1.5
+                        C4.3,14.2,4.3,13.9,4.3,13.5L4.3,13.5z"></path> <path class="st5" d="M7.8,9.9c0.9,0,1.7,0.3,2.3,0.9l1.7-1.7c-1-1-2.4-1.6-4-1.6c-2.3,0-4.3,1.3-5.3,3.3l2,1.5
+                        C4.9,10.9,6.2,9.9,7.8,9.9z"></path> </svg> <svg width="70" height="auto" style="position: relative; top: 4px;" viewBox="0 0 40 29" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M35.1197 0H4.61538C2.06638 0 0 2.08015 0 4.64615V23.5077C0 26.0737 2.06638 28.1538 4.61538 28.1538H35.1197C37.6687 28.1538 39.7351 26.0737 39.7351 23.5077V4.64615C39.7351 2.08015 37.6687 0 35.1197 0Z" fill="white"></path> <path d="M12.2589 13.2467C12.2589 12.0775 13.2064 11.5236 13.2523 11.4929C12.7174 10.6929 11.8768 10.6006 11.5864 10.5852C10.8376 10.539 10.1957 11.0159 9.84421 11.0159C9.49271 11.0159 8.94253 10.6159 8.3465 10.6159C7.58237 10.6159 6.86408 11.0621 6.46673 11.7698C5.65674 13.1698 6.25277 15.2467 7.03219 16.3852C7.41426 16.9544 7.87274 17.5698 8.48405 17.5544C9.04951 17.539 9.27875 17.1852 9.96647 17.1852C10.6542 17.1852 10.8682 17.5544 11.4642 17.5544C12.0908 17.5544 12.4881 16.9852 12.8702 16.4313C13.3134 15.7852 13.4815 15.1698 13.4968 15.139C13.4968 15.139 12.2894 14.6621 12.2742 13.2775L12.2589 13.2467Z" fill="black"></path> <path d="M11.5851 8.37109C11.1266 8.38648 10.5612 8.67879 10.2402 9.07879C9.94986 9.41725 9.69006 9.97109 9.75119 10.4942C10.2708 10.5403 10.7904 10.2326 11.1114 9.84802C11.4323 9.44802 11.6462 8.92494 11.5851 8.37109Z" fill="black"></path> <path d="M24.913 11.2634C23.5223 11.2634 22.4983 12.0634 22.4678 13.1557H23.6445C23.7362 12.6327 24.2253 12.2942 24.8824 12.2942C25.6771 12.2942 26.1356 12.6634 26.1356 13.3557V13.8173L24.5004 13.9096C22.9874 14.0019 22.1621 14.6327 22.1621 15.7096C22.1621 16.7865 23.0027 17.5404 24.2253 17.5404C25.0505 17.5404 25.7994 17.125 26.1509 16.4634H26.1815V17.4788H27.3888V13.2634C27.3888 12.048 26.4107 11.248 24.9283 11.248L24.913 11.2634ZM26.1203 15.1865C26.1203 15.9865 25.4479 16.5404 24.5615 16.5404C23.8585 16.5404 23.4306 16.2019 23.4306 15.6942C23.4306 15.1865 23.8585 14.848 24.6685 14.8019L26.1203 14.7096V15.1865Z" fill="black"></path> <path d="M32.3587 11.3398L30.8151 16.3398H30.7846L29.241 11.3398H27.8809L30.0969 17.5091L29.9746 17.8783C29.7759 18.5091 29.455 18.7552 28.8742 18.7552C28.7673 18.7552 28.5686 18.7552 28.4922 18.7398V19.7552C28.4922 19.7552 28.8895 19.786 28.9812 19.786C30.2497 19.786 30.8457 19.2937 31.3806 17.8168L33.673 11.3398H32.3434H32.3587Z" fill="black"></path> <path d="M19.0604 9.01562H15.9121V17.4772H17.2111V14.5849H19.0145C20.665 14.5849 21.8265 13.4464 21.8265 11.8002C21.8265 10.1541 20.6956 9.01562 19.0604 9.01562ZM18.7088 13.4772H17.2111V10.1233H18.7088C19.8398 10.1233 20.4816 10.7387 20.4816 11.8002C20.4816 12.8618 19.8398 13.4772 18.6936 13.4772H18.7088Z" fill="black"></path> </svg></p>
+                    <div class="font-16 font-fam font-strong">Google Pay ou Apple Pay</div>
+                    </div>
             </div>
         </div>
     </div>
+            <!-- modal trocas-->
+        <div id="reinsurancePanel_1" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+            <!-- Modal Content Existing Code -->
+            <div class="modal_titleBar modal_titleBar--hasShadow">
+                <div class="modal_close_container">
+                    <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal(1)">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="ignore">
+                <div class="ignore">
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+                </div>
+            </div>
+
+            <div class="ctn" style="max-height: 100%; overflow-y: auto;">
+            <div class="titre-service"><i class="bi bi-box-seam font-100"></i>
+                <div class="font-24 font-strong">&nbsp;&nbsp;Trocas & Devoluções</div>
+                </div>
+                <p class="font-fam font-16">
+                    *Caso se tratem de artigos de entrega exclusiva domicílio (ex: móveis) consulte a aba "Trocas & Devoluções de artigos ao domicílio" nesta “página” .
+                    *Caso se tratem de artigos de entrega exclusiva pela própria marca consulte esta página.
+                </p>
+            
+                <strong> Como trocar ou devolver: </strong><br>
+                   <strong>1.</strong> Preencha o talão de devolução/troca que vem com a sua encomenda. <br>
+                   <strong>2.</strong>Coloque os artigos acondicionados e o talão numa embalagem (poderá reutilizar a embalagem original). <br>
+                   <strong>3.</strong>Entregue de forma gratuita a sua embalagem num ponto "Pickup", onde será colocada uma etiqueta e lhe será entregue um comprovativo. Pode optar por devolver pelos CTT ou transportadora (sujeito às tarifas) para a morada abaixo. Peça e guarde uma prova da devolução em todos os casos.
+                    <br>
+                   <strong> Artigos de Entrega exclusiva ao domicílio ou Entrega Plus: </strong>Loja Outlet La Redoute - IC2, nº984, Vale Gracioso, 2400-827 Azoia, Leiria
+                    <br>
+                   <strong> Restantes artigos: </strong> La Redoute Portugal, Zona Industrial da Barosa, Pavilhões 3, 4, 5, Petigais, 2400-431 Leiria
+                   <br>
+                   <strong> Exceções nas trocas: </strong>
+                   <br>
+                    <p class="font-fam font-16">
+                        A La Redoute dá-lhe a possibilidade de trocar, sem sinais de uso, é válida apenas quando pretende o mesmo produto desde que o valor do artigo da encomenda de troca resulte no mesmo valor da encomenda inicial e no caso dos artigos recebidos apresentarem algum defeito. Existem, no entanto, as seguintes exceções:
+                        <br>
+                        - Roupa de banho deve incluir o autocolante de higiene.
+                        <br>
+                        - Roupa interior e acessórios devem ser devolvidos sem sinais de uso e na embalagem original.
+                        <br>
+                        - "Acessórios íntimos" não são elegíveis para troca ou devolução.
+                        <br><br>
+                    </p>
+                    <p class="font-fam font-16">
+                   <strong> Informação sobre reembolso:</strong><br>
+                   Após receção da sua embalagem nas nossas instalações, procederemos ao tratamento do seu reembolso.
+                   <br></p>
+                   <p class="font-fam font-16">
+                   <strong>REEMBOLSO NO MESMO MEIO DO PAGAMENTO:</strong><br>
+                   Reembolso Paypal, Visa, Google Pay e Apple Pay são feitos para o mesmo modo de pagamento, no período de 6 meses. Posteriormente são efetuados por transferência bancária para o IBAN especificado na conta do cliente.
+                   <br></p>
+                   <p class="font-fam font-16">
+                   <strong>REEMBOLSO POR TRANSFERÊNCIA BANCÁRIA:</strong><br>
+                   O reembolso será efetuado por tranferência bancária para o IBAN nas encomendas pagas por Multibanco e MB Way
+                   <br>
+                   <p class="font-fam font-16">
+                   Terá que indicar/confirmar o seu IBAN no site ou na App, na sua área de cliente.
+                   Será enviado por e-mail a confirmação da transferência.
+                    </p>
+                <div class="small"></div>
+            </div>
+        </div>
+    </div>
+    <!-- modal envio-->
+    <div id="reinsurancePanel_0" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+        <!-- Modal Content Existing Code -->
+        <div class="modal_titleBar modal_titleBar--hasShadow">
+            <div class="modal_close_container">
+                <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal(0)">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                
+            </div>
+        </div>
+        <div class="ignore">
+            <div class="ignore">
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+            </div>
+        </div>
+
+
+        <div class="ctn" style="max-height: 100%; overflow-y: auto;">
+                            <div class="titre-service"><img src="https://cdn.laredoute.com/marketing/StudioFR/LR-pictos/NI/Delivery.svg" style="border-right: 0;" alt="Entrega">
+            <div class="font-24 font-strong">&nbsp;&nbsp;Entrega ao domicílio</div>
+            </div>
+            <p class="font-fam font-16">A entrega ao domicílio é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior a 50€&nbsp;o custo será de 4,99€ (7,99€ para clientes das ilhas).</p>
+            <br><br>
+            <div class="payment">
+            <p><img src="https://www.newsredoute.com/servicos/pe22/images/entrega-plus.jpg" alt="" style="width: 55px;"></p>
+            <div class="font-24 font-strong font-fam font-16" style="padding-left: 15px; padding-top: 5px;">Entrega Plus <span style="font-size: 14px;"> <br>ao domicílio <br><br></span></div>
+            </div>
+            <p class="font-fam font-16">*Devido às suas características de peso (&gt;1,5 metros incluídos ou 0,125 m3 de volume), medida e/ou volume, a entrega ao domicílio Plus é a única forma de entrega disponível para alguns artigos da categoria mobiliário e decoração, que tem um custo de envio associado, descrito na tabela abaixo. Pagará, este valor, apenas uma vez por encomenda. <br><br><img class="desktop" src="https://newsredoute.com/servicos/ah22/images/tabela_desktop_40.jpg" alt=""> <br><br>O envio ao domicílio (Entrega ao domicílio normal, Entrega Exclusiva ao domicílio e Entrega Plus ao domicílio) para as ilhas segue por via marítima.<br><br><br>O artigo será entregue à entrada da sua casa.<br><strong>Atenção!</strong> Verifique se as aberturas (portas, escadas, elevadores) permitem a passagem da embalagem no ato da entrega. No caso de impossibilidade de entrega devido aos fatores indicados a mesma passará a ser realizada sob a inteira responsabilidade dos utilizadores, não podendo a La Redoute ser responsabilizada pela mesma.<br><br><img class="mobile" src="https://newsredoute.com/servicos/ah22/images/tabela_mobile_40.jpg" alt=""> <br><br></p>
+            <div class="payment">
+            <p><img src="https://www.newsredoute.com/servicos/pe18/images/pickup2.png" alt="" style="width: 80px; left: -12px; position: relative;"></p>
+            <div class="payment-name font-fam font-16">Pontos PICKUP <span style="font-size: 14px;"> <br>Horário prático <br>+600 pontos à sua disposição <br><br></span></div>
+            </div>
+            <p class="font-fam font-16">Os pontos Pickup consistem numa vasta rede de lojas onde poderá levantar as suas encomendas. A entrega nos Pontos Pickup é grátis em encomendas de valor igual ou superior a 50€. Caso a sua encomenda seja inferior o custo será de 4,99€ (7,99€ nas ilhas). Receberá um aviso por SMS ou e-mail a avisar logo que a sua encomenda se encontre disponível para levantamento no Ponto de Entrega. Proceda o levantamento, no prazo máximo de 8 dias, fazendo-se acompanhar do Bilhete de Identidade ou Cartão de Cidadão.</p>
+            <p class="font-fam font-16"><strong>Pontos Pickup:</strong> <br><a class="block big underline" href="https://www.laredoute.pt/myaccount/returnpoints.aspx" target="_blank" rel="noopener" style="color:black;"> Saiba aqui quais os Pontos mais perto de si</a></p>
+            <div class="small"></div>
+        </div>
+    </div>
+</div>
+<!-- modal apoio-->
+<div id="reinsurancePanel_3" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+    <!-- Modal Content Existing Code -->
+    <div class="modal_titleBar modal_titleBar--hasShadow">
+        <div class="modal_close_container">
+            <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeModal(3)">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            
+        </div>
+    </div>
+    <div class="ignore">
+        <div class="ignore">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+        </div>
+    </div>
+
+
+    <div class="ctn" style="max-height: 100%; overflow-y: auto;">
+        <div class="payment">
+            <p><i class="bi bi-envelope icon-40"></i></p>
+            <div class="font-16 font-fam font-strong">&nbsp;&nbsp;E-mail</div>
+        </div>
+        <p class="font-16 font-fam black-font"><a href="mailto:apoiocliente@redoute.pt" style="color:black;><u><b>apoiocliente@redoute.pt</b></u></a> ou utilize este <a href="/help/contactform.aspx"><u><b>formulário de contacto</b></u></a></p>
+        <br><br>
+        <div class="payment">
+            <p><i class="bi bi-phone icon-40"></i></p>
+            <div class="font-16 font-fam font-strong">&nbsp;&nbsp;Telefone</div>
+        </div>
+        
+        <p class="font-16 font-fam black-font">Através do&nbsp; <u><a href="tel:244810000" style="color:black;"><b>244 810 000</b></a></u> (custo de chamada para rede fixa nacional) ou <u><a href="tel:707201010" style="color:black;"><b>707 20 10 10</b></a></u> (0.11€/min para chamadas efetuadas a partir de rede fixa, e 0.16€/min para chamadas efetuadas a partir de rede móvel).<br>De 2ª a 6ª das 9h00 às 18h00 (horários sujeitos a alteração).</p>
+        <div class="payment">
+            <p><i class="bi bi-envelope-paper icon-40"></i></p>
+            <div class="font-16 font-fam font-strong">&nbsp;&nbsp;Correio</div>
+        </div>
+        <p class="font-16 font-fam">La Redoute - Zona Industrial da Barosa, Rua Beco dos Petigais - Fração F, Nº45 e 65, 2400-431 Leiria.</p>
+        <br><br>
+        <div class="payment">
+            <p><i class="bi bi-earbuds icon-40"></i></p>
+            <div class="font-16 font-fam font-strong">&nbsp;&nbsp;Chat</div>
+        </div>
+        <p class="font-16 font-fam">De 2ª a 6ª das 9h00 às 18h00.</p>
+        
+        <br><br><div class="payment">
+            <p><i class="bi bi-whatsapp icon-40"></i></p>
+            <div class="font-16 font-fam font-strong">&nbsp;&nbsp;Whatsapp</div>
+        </div>
+        <p class="font-16 font-fam black-font">Envie uma mensagem para o <u><a href="https://api.whatsapp.com/send?phone=351969382484" target="_blank" tabindex="2" style="color:black;"><b>969 382 484</b></a></u> de 2ª a 6ª, das 9h00 às 18h00.</p>
+
+        <div class="small"></div>
+    </div>
+</div>
+</div>
     <!-- footer -->
     <div class="no-padding no-margin max-width-100 container w-100 footer footer-color-1 white-font">
         <div class="row">
             <div class="col-sm align-c padding-left-rem-4">
                 <i class="bi bi-truck size70"></i>
-                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal()">
+                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(0)">
                         <span class="p-2">ENVIO GRÁTIS</span>
                     </a>
             </div>
             <div class="col-sm align-c">
-                <i class="bi bi-box-seam size70"></i><span class="p-2">TROCAS E DEVOLUÇÕES</span>
+                <i class="bi bi-box-seam size70"></i>
+                <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(1)">
+                    <span class="p-2">TROCAS E DEVOLUÇÕES</span>
+                </a>
+                
             </div>
                   <div class="col-sm align-c">
-                    <i class="bi bi-shield size70"></i><span class="p-2">PAGAMENTO SEGURO</span>
+                    <i class="bi bi-shield size70"></i>
+                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(2)">
+                        <span class="p-2">PAGAMENTO SEGURO</span>
+                    </a>
                   </div>
                   <div class="col-sm align-c">
-                    <i class="bi bi-clock size70"></i><span class="p-2">APOIO AO CLIENTE</span>
+                    <i class="bi bi-clock size70"></i>
+                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(3)">
+                        <span class="p-2">APOIO AO CLIENTE</span>
+                    </a>
                   </div>
                 </div>
             </div>
