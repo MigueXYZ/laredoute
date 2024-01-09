@@ -6,14 +6,37 @@ body {
     font-size: 16px;
 }
 
+.bd-radius{
+    border-radius: 10px !important;
+}
+
+.h-5rem{
+    height: 5rem;
+}
+.w-80{
+    width: 80%;
+}
+
+.margin-2_2{
+    margin:2.2% !important;
+}
+
+.bg-grey{
+    background-color:#d9d9d9 !important;
+}
+.bg-white{
+    background-color:#fff !important;
+}
+
 .font-fam{
     font-family: 'Montserrat', sans-serif !important;
 }
-
+.font-14{
+    font-size: 14px !important;
+}
 .font-16{
     font-size: 16px !important;
 }
-
 .font-24{
     font-size: 24px;
 }
@@ -29,11 +52,14 @@ body {
 .font-strong{
     font-weight: bold;
 }
+.font-semibold{
+    font-weight: 500;
+}
 .big-image{
     margin: 2rem;
     border-radius: 1rem;
     padding: 1rem;
-    background-color:#f3f3f3;
+    background-color:#d9d9d9;
     width:  80%;
     height: 80%;
 }
@@ -62,7 +88,12 @@ body {
 .max-width-100{
     max-width: 100% !important;
 }
-
+.max-width-90{
+    max-width: 90% !important;
+}
+.max-width-80{
+    max-width: 80% !important;
+}
 .padding-left-rem-4{
     padding-left: 4rem !important;
 }
@@ -107,6 +138,13 @@ body {
 .margin-medium{
     margin: 1rem !important;
 }
+.margin-top-medium{
+    margin-top: 1rem !important;
+}
+.margin-left-medium{
+    margin-left: 1rem !important;
+}
+
 
 .no-round-right{
     border-top-right-radius: 0 !important;

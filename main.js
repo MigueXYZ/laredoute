@@ -26,6 +26,7 @@ setTimeout(() => {
 
 // Function to open the modal
 function openModal(id) {
+
     var modal = document.getElementById('reinsurancePanel_'+id);
     modal.classList.add('modal--isOpen');
     modal.setAttribute('aria-modal', 'true');
@@ -41,6 +42,17 @@ function closeModal(id) {
     modal.setAttribute('aria-modal', 'false');
     modal.setAttribute('tabindex', '-1');
     modal.classList.remove('show');
+}
+
+function closeAllModals(){
+    for(let i = 0; i <= 9; i++){
+    var panel = 'reinsurancePanel_' + i;
+    var modal = document.getElementById(panel);
+    modal.classList.remove('modal--isOpen');
+    modal.setAttribute('aria-modal', 'false');
+    modal.setAttribute('tabindex', '-1');
+    modal.classList.remove('show');
+    }
 }
 
 // Attach the event listener to the button
