@@ -16,7 +16,9 @@ body {
 .w-80{
     width: 80%;
 }
-
+.w-45{
+    width: 45% !important;
+}
 .margin-2_2{
     margin:2.2% !important;
 }
@@ -36,6 +38,9 @@ body {
 }
 .font-16{
     font-size: 16px !important;
+}
+.font-20{
+    font-size: 20px;
 }
 .font-24{
     font-size: 24px;
@@ -60,8 +65,8 @@ body {
     border-radius: 1rem;
     padding: 1rem;
     background-color:#d9d9d9;
-    width:  80%;
-    height: 80%;
+    width:  90%;
+    height: 90%;
 }
 
 .white-font{
@@ -138,14 +143,27 @@ body {
 .margin-medium{
     margin: 1rem !important;
 }
+.margin-top-big{
+    margin-top: 2rem !important;
+}
 .margin-top-medium{
     margin-top: 1rem !important;
+}
+.margin-top-small{
+    margin-top: 0.75rem !important;
 }
 .margin-left-medium{
     margin-left: 1rem !important;
 }
 .margin-right-medium{
     margin-right: 1rem !important;
+}
+.margin-sides-medium{
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+.no-margin-bottom{
+    margin-bottom:0px !important;
 }
 
 
