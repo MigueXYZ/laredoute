@@ -26,8 +26,12 @@
                         <li class="nav-item my-auto p-2 align-c">
                             <button class="btn-invis">
                                 <div class="btn btn-dark text-white d-flex align-items-center">
-                                    <i class="bi bi-list icon-40"></i> 
-                                    <span class="letra-menu">Menu</span>
+                                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(4)">
+                                        <i class="bi bi-list icon-40"></i>
+                                    </a>   
+                                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(4)">
+                                        <span class="letra-menu">Menu</span>
+                                    </a>
                                 </div>
                             </button>
                         </li>
@@ -180,6 +184,31 @@
 
 
             <!-- Modal Content -->
+            <!-- modal menu-->
+            <div id="reinsurancePanel_4" aria-modal="false" class="modal_wrapper_left modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
+                <!-- Modal Content Existing Code -->
+                <div class="modal_titleBar modal_titleBar--hasShadow">
+                    <div class="modal_close_container">
+                        <button type="button" class="modal_close" data-dismiss="modal" aria-label="Close" onclick="closeAllModals()">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="ignore">
+                    <div class="ignore">
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+                    </div>
+                </div>
+    
+                <div class="ctn" style="max-height: 100%; overflow-y: auto;">
+                <div class="font-strong font-fam font-24 p-2"> Casa & Jardim</div>
+                    <div class="small"></div>
+                </div>
+            </div>
+        </div>
             <!-- modal pagamento seguro-->
         <div id="reinsurancePanel_2" aria-modal="false" class="modal_wrapper modal--panel" aria-labelledby="" style="z-index: 10002;" tabindex="-1">
             <!-- Modal Content Existing Code -->
