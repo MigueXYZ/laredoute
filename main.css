@@ -99,6 +99,15 @@ body {
 .max-width-80{
     max-width: 80% !important;
 }
+.max-width-70{
+    max-width: 70% !important;
+}
+.max-width-60{
+    max-width: 60% !important;
+}
+.max-width-50{
+    max-width: 50% !important;
+}
 .padding-left-rem-4{
     padding-left: 4rem !important;
 }
@@ -136,10 +145,13 @@ body {
     overflow-x: auto;
 }
 
+.text-overflow{
+    text-overflow: ellipsis !important;
+}
+
 .padding-small{
     padding: .25rem !important;
 }
-
 .margin-medium{
     margin: 1rem !important;
 }
@@ -155,6 +167,9 @@ body {
 .margin-left-medium{
     margin-left: 1rem !important;
 }
+.margin-right-small{
+    margin-right: 0.5rem !important;
+}
 .margin-right-medium{
     margin-right: 1rem !important;
 }
@@ -165,7 +180,18 @@ body {
 .no-margin-bottom{
     margin-bottom:0px !important;
 }
+.padding-sides-medium{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+.padding-sides-big{
+    padding-right: 1.75rem !important;
+    padding-left: 1.75rem !important;
+}
 
+.no-border-color{
+    border-color: transparent !important;
+}
 
 .no-round-right{
     border-top-right-radius: 0 !important;
@@ -178,9 +204,17 @@ body {
 }
 
 .card{
+    height:480px!important;
+    max-height:480px!important;
     min-width: 300px !important;
     background-color: #d9d9d9 !important;
     border: none !important;;
+}
+.bg-color{
+    background-color: #d9d9d9;
+}
+.heigh-small{
+    min-height: 3px;
 }
 
 .no-decor{
@@ -271,6 +305,26 @@ body {
     opacity: 1;
 }
 
+.modal_wrapper_small {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Start off-screen */
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10002;
+    opacity: 1;
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.modal_wrapper_small.show {
+    right: 0;
+    opacity: 1;
+}
+
+
+
 .modal_wrapper.modal--iceberg {
     padding: 0;
     height: 100%
@@ -314,6 +368,21 @@ body {
     border-bottom: none
 }
 
+.modal_titleBar_small {
+    width: 400px;
+    height: 64px;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #d5d5d5;
+    border-bottom: none
+}
+
 .footer-link {
     color: white;
     text-decoration: none;
@@ -327,7 +396,6 @@ body {
 
             /* Modal Title Bar */
             .modal_titleBar {
-                background-color: #f1f1f1;
                 padding: 10px;
             }
 

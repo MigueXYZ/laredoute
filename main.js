@@ -2,6 +2,11 @@ function home(){
     window.location.href="index.html"
 }
 
+function changeQuantity(number){
+    $("#quantidade").html(number)
+    closeAllModals();
+}
+
 // Existing code...
 
 _satellite.pageBottom();
