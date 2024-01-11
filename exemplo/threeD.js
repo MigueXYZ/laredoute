@@ -144,7 +144,8 @@ function playAnimation(object, isAberto){
 window.onclick = function(evento){
     rato.x = (evento.clientX / WIDTH) * 2 - 1
     rato.y = -(evento.clientY / HEIGHT) * 2 + 1
-
+    console.log(rato.x + ":X")
+    console.log(rato.y + ":Y")
     raycaster.setFromCamera(rato, camara)
     let intersetados = raycaster.intersectObjects(candidatos)
     if(intersetados.length > 0){

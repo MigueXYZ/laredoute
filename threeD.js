@@ -128,6 +128,7 @@ let isPortaRAberta = false;
 let isPortaLAberta = false;
 
 function playAnimation(object, isAberto){
+    console.log("boas");
     if (isAberto) {
         object.timeScale = -1;
         object.paused = false;
@@ -141,10 +142,11 @@ function playAnimation(object, isAberto){
     return !isAberto;
 }
 
-window.onclick = function(evento){
-    rato.x = (evento.clientX / WIDTH) * 2 - 1
-    rato.y = -(evento.clientY / HEIGHT) * 2 + 1
 
+window.onclick = function(evento){
+    var canvasBounds = document.getElementById("myCanvas").getBoundingClientRect();
+    rato.x = (( evento.clientX - canvasBounds.left ) / ( canvasBounds.right - canvasBounds.left ) ) * 2 - 1
+    rato.y = -((evento.clientY - canvasBounds.top ) / ( canvasBounds.bottom - canvasBounds.top) ) * 2 + 1
     raycaster.setFromCamera(rato, camara)
     let intersetados = raycaster.intersectObjects(candidatos)
     if(intersetados.length > 0){

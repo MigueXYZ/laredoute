@@ -16,7 +16,7 @@ function changeMaterial(mat){
     const $select = document.querySelector('#dropdown_material');
     $select.value = mat;
     if(mat=='wood1'){
-        mat='Nogueira';
+        mat='Madeira';
     }else{
         mat='Contraplacado';
     }
