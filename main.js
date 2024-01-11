@@ -7,6 +7,16 @@ function changeQuantity(number){
     closeAllModals();
 }
 
+function changeColor(color){
+    if(color=='wood1'){
+        color='Nogueira';
+    }else{
+        color='Contraplacado';
+    }
+    $("#cor").html(color)
+    closeAllModals();
+}
+
 // Existing code...
 
 _satellite.pageBottom();
