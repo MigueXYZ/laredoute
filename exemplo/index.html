@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Three.js HTML Template</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Can be ignored, foi so para trabalhar no 3d-->
+    <style>
+      body{
+        background-color: white;
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+</head>
+<body>
+  <div id="overlay">
+    <p id="overlayText">Modelo 3D - Intereja com o rato!</p>
+  </div>
+  <div>
+    <canvas id="myCanvas"></canvas>
+  </div>
+  <div class="radioCor">
+    <input type="radio" id="radio_CstnClaro" name="radioCor" value="claro" checked>
+    <label for="radio_CstnClaro"></label>
+    <input type="radio" id="radio_CstnEscuro" name="radioCor" value="escuro">
+    <label for="radio_CstnEscuro"></label>
+    <input type="radio" id="radio_Preto" name="radioCor" value="preto">
+    <label for="radio_Preto"></label>
+  </div>
+  
+  <select name="dropdown_material" id="dropdown_material">
+      <option value="wood1">Madeira</option>
+      <option value="wood2">Contraplacado</option>
+  </select>
+  <script async src="/node_modules/unpkg.com_es-module-shims@1.8.0_dist_es-module-shims.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/node_modules/three/build/three.module.js",
+      "three/addons/": "/node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="./threeD.js"></script>
+</body>
+</html>
