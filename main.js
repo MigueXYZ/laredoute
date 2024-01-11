@@ -67,7 +67,7 @@ function closeModal(id) {
 }
 
 function closeAllModals(){
-    for(let i = 0; i <= 9; i++){
+    for(let i = 0; i <= 14; i++){
     var panel = 'reinsurancePanel_' + i;
     var modal = document.getElementById(panel);
     if(modal){
