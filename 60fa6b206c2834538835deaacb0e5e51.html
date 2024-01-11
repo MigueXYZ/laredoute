@@ -68,13 +68,13 @@
 
 
 
-
-
-
-            <div class="container max-width-90 w-100">
+        <div class="container max-width-90 w-100">
                 <div class="row">
                     <div class="col">   
                         <img src="/images/60fa6b206c2834538835deaacb0e5e51.webp" class="big-image">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
                     </div> 
                     <div class="col">
                         <br><br><br>
@@ -85,12 +85,28 @@
                         <span class="font-32 font-semibold">Secretária vintage com compartimento duplo, em nogueira, Dalqui</span>
                         <br>
                         <!--O todo poderoso-->
-                        <div class="w-90 bg-grey h-5rem d-flex p-2 bd-radius">
-                            <div class="bg-white w-100 bd-radius d-flex align-items-center">
-                                <img class="p-2" src="images/60fa6b206c2834538835deaacb0e5e51.webp" alt="" style="height: 4rem; width:4rem;">
-                                <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(7)">
-                                    <span class="p-2 font-strong font-16 font-fam black-font" id="cor">Nogueira</span>
-                                </a>
+                        <div class="w-90 d-flex align-items-center justify-content-between margin-top-medium ">
+                            <div class="w-48 bg-grey h-5rem d-flex p-2 bd-radius">
+                                <div class="bg-white w-100 bd-radius d-flex align-items-center">
+                                    <img class="p-2" src="images/60fa6b206c2834538835deaacb0e5e51.webp" alt="" style="height: 4rem; width:4rem;">
+                                    <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(7)">
+                                        <span class="p-2 font-strong font-16 font-fam black-font" value="wood1" id="material">Nogueira</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-48 bg-grey h-5rem d-flex p-2 bd-radius">
+                                <div class="bg-white w-100 bd-radius d-flex align-items-center justify-content-between">
+
+                                        <span class="font-fam font-16 font-strong black-font p-2 margin-left-medium">Cores Extra</span>
+                                        <div class="radioCor margin-right-medium">
+                                            <input type="radio" id="radio_CstnClaro" name="radioCor" value="claro" checked>
+                                            <label for="radio_CstnClaro"></label>
+                                            <input type="radio" id="radio_CstnEscuro" name="radioCor" value="escuro">
+                                            <label for="radio_CstnEscuro"></label>
+                                            <input type="radio" id="radio_Preto" name="radioCor" value="preto">
+                                            <label for="radio_Preto"></label>
+                                        </div>
+                                </div>
                             </div>
                         </div>
                         <!------------------->
@@ -309,12 +325,12 @@
                 <div class="margin-left-medium margin-top-small">
                     <div class="font-strong font-fam font-24"> Escolha Uma Cor</div>
                 </div>
-                <div onclick="changeColor('wood1')" class="d-flex justify-content-end">
+                <div onclick="changeMaterial('wood1')" class="d-flex justify-content-end">
                     <span class="font-32 font-fam font-bold margin-right-small">Nogueira</span>
                 </div>
                 <hr class="bg-color height-small">
 
-                <div onclick="changeColor('wood2')" class="d-flex justify-content-end">
+                <div onclick="changeMaterial('wood2')" class="d-flex justify-content-end">
                     <span class="font-32 font-fam font-bold margin-right-small">Contraplacado</span>
                 </div>
 
@@ -822,7 +838,45 @@
 
         <div class="small"></div>
     </div>
-</div>
+</div>  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modelo 3D</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div id="overlay">
+                        <p id="overlayText">Modelo 3D - Interaja com o rato!</p>
+                    </div>
+                    <div>
+                        <canvas id="myCanvas"></canvas>
+                    </div>
+                </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="radioCor">
+                <input type="radio" id="radio_CstnClaro" name="radioCor" value="claro" checked>
+                <label for="radio_CstnClaro"></label>
+                <input type="radio" id="radio_CstnEscuro" name="radioCor" value="escuro">
+                <label for="radio_CstnEscuro"></label>
+                <input type="radio" id="radio_Preto" name="radioCor" value="preto">
+                <label for="radio_Preto"></label>
+              </div>
+              <a href="#" class="footer-link" data-url="/services/delivery.aspx" data-ispanel="True" onclick="openModal(7)">
+                <span class="font-strong font-16 font-fam black-font" value="wood1" id="material_modal">Nogueira</span>
+              </a>
+              </div>
+              
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
     <!-- footer -->
     <div class="no-padding no-margin max-width-100 container w-100 footer footer-color-1 white-font">
@@ -856,8 +910,19 @@
             </div>
 
       </div>
-    <script src="main.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script async src="/node_modules/unpkg.com_es-module-shims@1.8.0_dist_es-module-shims.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "/node_modules/three/build/three.module.js",
+        "three/addons/": "/node_modules/three/examples/jsm/"
+      }
+    }
+    </script>
+    <script type="module" src="./threeD.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

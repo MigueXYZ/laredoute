@@ -1,3 +1,5 @@
+
+
 function home(){
     window.location.href="index.html"
 }
@@ -7,13 +9,41 @@ function changeQuantity(number){
     closeAllModals();
 }
 
-function changeColor(color){
-    if(color=='wood1'){
-        color='Nogueira';
-    }else{
-        color='Contraplacado';
+let dropdown = document.getElementById("material");
+
+function dropdownMaterial(){
+    if(dropdown.value == "wood1"){
+        wooden.forEach((elemento) => {
+            if(woodMaterial)
+                elemento.material = woodMaterial;
+        });
+        wickered.forEach((elemento) => {
+            if(wickerMaterial)
+                elemento.material = wickerMaterial;
+        });
     }
-    $("#cor").html(color)
+    else{
+        wooden.forEach((elemento) => {
+            if(wickerMaterial)
+                elemento.material = wickerMaterial;
+        });
+        wickered.forEach((elemento) => {
+            if(woodMaterial)
+                elemento.material = woodMaterial;
+        });
+    }
+}
+
+function changeMaterial(mat){
+    $("#material").attr("value",mat);
+    dropdownMaterial();
+    if(mat=='wood1'){
+        mat='Nogueira';
+    }else{
+        mat='Contraplacado';
+    }
+    $("#material").html(mat);
+    $("#material_modal").html(mat);
     closeAllModals();
 }
 

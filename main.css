@@ -6,6 +6,10 @@ body {
     font-size: 16px;
 }
 
+.w-48{
+    width: 49.5%!important;
+}
+
 .bd-radius{
     border-radius: 10px !important;
 }
@@ -442,63 +446,64 @@ body {
                 }
             }
 
-            .radioCor input[type="radio"] {
-                display: none;
-            }
-            
-            .radioCor {
-                padding: 20px;
-                display: inline-block;
-                gap: 20px;
-            }
-            
-            .radioCor label {
-                position: relative;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                cursor: pointer;
-                display:inline-block;
-            }
-            
-            .radioCor input[type="radio"]:checked + label {
-                border: 4px solid #FFFFFF; /*Cor da border quando o radio ta clicado; podes mudar esta cor*/
-                width: 22px;
-                height: 22px;
-            }
-            
-            #radio_CstnClaro + label{
-                 background-color: #674d28; 
-            }
-            #radio_CstnEscuro + label{
-                 background-color: #45341c; 
-            }
-            #radio_Preto + label{
-                 background-color: #33271d; 
-            }
-            
-            #overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 500px;
-                height: 500px;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-size: 24px;
-                cursor: pointer;
-                transition: all 0.5s ease;
-            }
-            
-            #overlay.hidden {
-                opacity: 0;
-                pointer-events: none;
-            }
-            
-            #overlayText{
-                font-family: 'Courier New', Courier, monospace;
-                font-weight: bold;
-            }
+.radioCor input[type="radio"] {
+    display: none;
+    transform:scale(2);
+}
+
+.radioCor {
+    padding: 20px;
+    display: inline-block;
+    gap: 20px;
+}
+
+.radioCor label {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.radioCor input[type="radio"]:checked + label {
+    border: 4px solid #FFFFFF; /*Cor da border quando o radio ta clicado; podes mudar esta cor*/
+    width: 22px;
+    height: 22px;
+}
+
+#radio_CstnClaro + label{
+        background-color: #674d28; 
+}
+#radio_CstnEscuro + label{
+        background-color: #45341c; 
+}
+#radio_Preto + label{
+        background-color: #33271d; 
+}
+
+#overlay {
+    position: fixed;
+    top: 11.6%;
+    left: -36.8%;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#overlayText{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold;
+}

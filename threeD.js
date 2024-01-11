@@ -191,7 +191,7 @@ radioCor.forEach(function (radioButton) {
     });
 });
 
-let dropdown = document.getElementById("dropdown_material");
+let dropdown = document.getElementById("material");
 
 function dropdownMaterial(){
     if(dropdown.value == "wood1"){
@@ -216,7 +216,7 @@ function dropdownMaterial(){
     }
 }
 
-dropdown.addEventListener('change', dropdownMaterial);
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlay");
