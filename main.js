@@ -4,7 +4,15 @@ function home(){
     window.location.href="index.html"
 }
 
+function update(number){
+    $("#preco1").html(number*1349+".00€")
+    $("#preco2").html(number*1349+".00€")
+}
+
 function changeQuantity(number){
+    if($("#preco1")){
+        update(number);
+    }
     $("#quantidade").html(number)
     closeAllModals();
 }
