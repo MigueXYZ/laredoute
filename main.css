@@ -482,10 +482,17 @@ body {
         background-color: #33271d; 
 }
 
+.button-3d{
+    position: absolute !important;
+    margin-top:34.3rem !important;
+    margin-left:-7rem !important;
+    border-radius: 5px !important;
+    border-color: #d9d9d9 !important;
+    border-width: 2px !important;
+}
+
 #overlay {
-    position: fixed;
-    top: 11.6%;
-    left: 33%;
+    position: absolute;
     width: 500px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.5);
