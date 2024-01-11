@@ -9,8 +9,12 @@ function changeQuantity(number){
     closeAllModals();
 }
 
+
+
 function changeMaterial(mat){
     $("#material").attr("value",mat);
+    const $select = document.querySelector('#dropdown_material');
+    $select.value = mat;
     if(mat=='wood1'){
         mat='Nogueira';
     }else{
@@ -66,10 +70,13 @@ function closeAllModals(){
     for(let i = 0; i <= 9; i++){
     var panel = 'reinsurancePanel_' + i;
     var modal = document.getElementById(panel);
-    modal.classList.remove('modal--isOpen');
-    modal.setAttribute('aria-modal', 'false');
-    modal.setAttribute('tabindex', '-1');
-    modal.classList.remove('show');
+    if(modal){
+        modal.classList.remove('modal--isOpen');
+        modal.setAttribute('aria-modal', 'false');
+        modal.setAttribute('tabindex', '-1');
+        modal.classList.remove('show');
+    }
+
     }
 }
 
