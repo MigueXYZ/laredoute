@@ -9,18 +9,14 @@ function changeQuantity(number){
     closeAllModals();
 }
 
-
-
 function changeMaterial(mat){
     $("#material").attr("value",mat);
-    dropdownMaterial();
     if(mat=='wood1'){
         mat='Nogueira';
     }else{
         mat='Contraplacado';
     }
     $("#material").html(mat);
-    $("#material_modal").html(mat);
     closeAllModals();
 }
 

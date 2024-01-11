@@ -191,9 +191,22 @@ radioCor.forEach(function (radioButton) {
     });
 });
 
-let dropdown = document.getElementById("material");
+let dropdown = document.getElementById("dropdown_material");
+
+function extras(){
+    let mat=dropdown.value;
+    $("#material").attr("value",mat);
+    if(mat=='wood1'){
+        mat='Nogueira';
+    }else{
+        mat='Contraplacado';
+    }
+    $("#material").html(mat);
+}
+
 
 function dropdownMaterial(){
+    extras();
     if(dropdown.value == "wood1"){
         wooden.forEach((elemento) => {
             if(woodMaterial)
@@ -216,7 +229,7 @@ function dropdownMaterial(){
     }
 }
 
-
+dropdown.addEventListener('change', dropdownMaterial);
 
 document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlay");
